@@ -3,7 +3,7 @@ Behavior                        Input word      Input string     Output word   O
 
 User searches for the word
 “a” in the string “a” and           a               a                  a
-the computer outputs the            
+the computer outputs the
 word “a” and no repeats
 
 
@@ -13,6 +13,11 @@ User searches for the word
 the computer outputs the
 word “a”  and no repeats
 
+User searches for the word
+“a” in the string
+“a b a c and ad” and the            a         a b a c and ad            a
+computer outputs word “a”
+and no repeats
 
 
 User searches for the word

@@ -32,6 +32,20 @@
             //Assert
             $this->assertEquals("a", $result);
         }
+
+        function test_countRepeats_sameLetters()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "a";
+            $input_string = "a b and a c and ad";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals("a", $result);
+        }
     }
 
 
