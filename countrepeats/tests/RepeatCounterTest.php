@@ -47,6 +47,20 @@
             $this->assertEquals(array("a", 2), $result);
         }
 
+        function test_countRepeats_finalTest()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_word = "the";
+            $input_string = "the theater is for the thespians";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(array("the", 2), $result);
+        }
+
     }
 
 ?>
