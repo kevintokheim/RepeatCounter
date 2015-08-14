@@ -58,8 +58,7 @@
             $result = $test_RepeatCounter->countRepeats($input_word, $input_string);
 
             //Assert
-            $this->assertEquals("a", $result);
-            $this->assertEquals(2, $result);
+            $this->assertEquals(array("a", 2), $result);
         }
     }
 
