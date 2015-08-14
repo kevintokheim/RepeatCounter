@@ -21,7 +21,9 @@
 
     $app->get("/results", function() use ($app) {
         $new_repeat_counter = new RepeatCounter;
-        $repeat_counter_results = $new_repeat_counter->countRepeats($_GET['input_word'], $_GET['input_string']);
+
+        //Repeated error: Undefined offset
+        $repeat_counter_results = $new_repeat_counter->countRepeats($_GET['input_word' && 'input_string']);
 
         return $app['twig']->render('results.html.twig', array('result' => $repeat_counter_results));
     });
