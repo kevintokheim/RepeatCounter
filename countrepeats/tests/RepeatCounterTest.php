@@ -16,7 +16,7 @@
             $result = $test_RepeatCounter->countRepeats($input_word, $input_string);
 
             //Assert
-            $this->assertEquals("a", $result);
+            $this->assertEquals(array("a", 1), $result);
         }
 
         function test_countRepeats_twoWords()
@@ -30,7 +30,7 @@
             $result = $test_RepeatCounter->countRepeats($input_word, $input_string);
 
             //Assert
-            $this->assertEquals("a", $result);
+            $this->assertEquals(array("a", 1), $result);
         }
 
         function test_countRepeats_sameLetters()
@@ -44,22 +44,9 @@
             $result = $test_RepeatCounter->countRepeats($input_word, $input_string);
 
             //Assert
-            $this->assertEquals("a", $result);
-        }
-
-        function test_countRepeats_repeatedWords()
-        {
-            //Arrange
-            $test_RepeatCounter = new RepeatCounter;
-            $input_word = "a";
-            $input_string = "a b and a c and ad";
-
-            //Act
-            $result = $test_RepeatCounter->countRepeats($input_word, $input_string);
-
-            //Assert
             $this->assertEquals(array("a", 2), $result);
         }
+
     }
 
 ?>
